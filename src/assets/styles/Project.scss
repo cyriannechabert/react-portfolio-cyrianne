@@ -30,6 +30,30 @@
     transform: scale(1.05);
 }
 
+.project-hover-slider {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 8px;
+  cursor: pointer;
+  position: relative;
+}
+
+.slider-track {
+  display: flex;
+  transition: transform 0.5s ease;
+  width: calc(100% * 3); // total width = number of images
+}
+
+.project-hover-slider:hover .slider-track {
+  transform: translateX(-100%); // slide exactly one image width
+}
+
+.slider-track img {
+  width: 100%;      // each image fills the container
+  flex-shrink: 0;   // prevent shrinking
+}
+
+
 @media screen {
     @media (max-width: 700px) {
         .projects-container {
