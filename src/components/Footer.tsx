@@ -5,6 +5,7 @@ import '../assets/styles/Footer.scss'
 
 function Footer() {
   return (
+
     <footer>
       <div>
         <a href="https://github.com/yujisatojr" target="_blank" rel="noreferrer"><GitHubIcon/></a>
